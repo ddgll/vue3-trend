@@ -18,11 +18,11 @@
 ## Installation
 
 ```bash
-npm i vue3trend -S
+npm i @ddgll/vue3-trend -S
 
 # or via yarn
 
-yarn add vue3trend
+yarn add @ddgll/vue3-trend
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ yarn add vue3trend
 ```js
 // app.js
 
-import Trend from "vue3-trend";
+import Trend from "@ddgll/vue3-trend";
 
 // ...
 
