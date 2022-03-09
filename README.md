@@ -49,8 +49,6 @@ _vue template_
 </trend>
 ```
 
-[Live Demo](https://jsfiddle.net/nyh18bLq/)
-
 ## Inspired
 
 [unsplash/react-trend](https://github.com/unsplash/react-trend) - 📈 Simple, elegant spark lines
