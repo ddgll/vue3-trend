@@ -33,11 +33,7 @@ yarn add @ddgll/vue3-trend
 import Trend from "@ddgll/vue3-trend";
 
 // ...
-
-app.use(Trend);
 ```
-
-_vue template_
 
 ```html
 <trend
@@ -55,21 +51,21 @@ _vue template_
 
 ## Props
 
-| Name              | Type           | Default     | Description                                                                                                                                                                                                                                       | Example                                                                      |
-| ----------------- | -------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | --- |
-| data              | Number\|Object | `undefined` | The data accepted by Vue Trend is incredibly simple: An array of y-axis values to graph.                                                                                                                                                          | `[120, 149, 193.4, 200, 92]` or `[{ value: 4 }, { value: 6 }, { value: 8 }]` |
-| gradient          | String         | `['#000']`  | Colour can be specified as any SVG-supported format (named, rgb, hex, etc).                                                                                                                                                                       | `['#0FF', '#F0F', '#FF0']`                                                   | -   |
-| gradientDirection | String         | `top`       | Top, Bottom, Left or Right.                                                                                                                                                                                                                       |                                                                              | -   |
-| width             | Number         | auto        | Set an explicit width for your SVG.                                                                                                                                                                                                               | -                                                                            |
-| height            | Number         | auto        | Set an explicit height for your SVG.                                                                                                                                                                                                              | -                                                                            |
-| padding           | Number         | `8`         | If you set a very large `strokeWidth` on your line, you may notice that it gets "cropped" towards the edges.                                                                                                                                      | -                                                                            |
-| smooth            | Boolean        | `false`     | Smooth allows the peaks to be 'rounded' out so that the line has no jagged edges.                                                                                                                                                                 | -                                                                            |
-| radius            | Number         | `10`        | When using **smoothing**, you may wish to control the amount of curve around each point. This prop has no effect if `smooth` isn't set to `true`.                                                                                                 | -                                                                            |
-| autoDraw          | Boolean        | `false`     | Allow the line to draw itself on mount. Set to `true` to enable, and customize using `autoDrawDuration` and `autoDrawEasing`.                                                                                                                     | -                                                                            |
-| autoDrawDuration  | Number         | `2000`      | The amount of time, in milliseconds, that the autoDraw animation should span. This prop has no effect if `autoDraw` isn't set to `true`.                                                                                                          | -                                                                            |
-| autoDrawEasing    | String         | `ease`      | The easing function to use for the autoDraw animation. Accepts any transition timing function within [the CSS spec](http://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp) (eg. `linear`, `ease`, `ease-in`, `cubic-bezier`...). | -                                                                            |
-| max               | Number         | `-Infinity` | Specify max value                                                                                                                                                                                                                                 | -                                                                            |
-| min               | Number         | `Infinity`  | Specify min value, This is useful if you have multiple lines. See [#8](https://github.com/lexxyungcarter/vue-trend/issues/8)                                                                                                                      | -                                                                            |
+- data : Number | Object: The data accepted by Vue Trend is incredibly simple: An array of y-axis values to graph.
+  - `[120, 149, 193.4, 200, 92]` or `[{ value: 4 }, { value: 6 }, { value: 8 }]`
+- gradient : String Colour can be specified as any SVG-supported format (named, rgb, hex, etc)
+  - `['#0FF', '#F0F', '#FF0']`
+- gradientDirection: String: Top, Bottom, Left or Right.
+- width: Number: Set an explicit width for your SVG.
+- height: Number: Set an explicit height for your SVG.
+- padding: Number: If you set a very large `strokeWidth` on your line, you may notice that it gets "cropped" towards the edges.
+- smooth: Boolean: Smooth allows the peaks to be 'rounded' out so that the line has no jagged edges.
+- radius: Number: When using **smoothing**, you may wish to control the amount of curve around each point. This prop has no effect if `smooth` isn't set to `true`.
+- autoDraw: Boolean: Allow the line to draw itself on mount. Set to `true` to enable, and customize using `autoDrawDuration` and `autoDrawEasing`.
+- autoDrawDuration: Number: The amount of time, in milliseconds, that the autoDraw animation should span. This prop has no effect if `autoDraw` isn't set to `true`.
+- autoDrawEasing: String: The easing function to use for the autoDraw animation. Accepts any transition timing function within [the CSS spec](http://www.w3schools.com/cssref/css3_pr_transition-timing-function.asp) (eg. `linear`, `ease`, `ease-in`, `cubic-bezier`...).
+- max: Number: Specify max value
+- min: Number: Specify min value, This is useful if you have multiple lines.
 
 #### SVG Props
 

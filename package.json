@@ -1,7 +1,7 @@
 {
   "name": "@ddgll/vue3-trend",
   "description": "Convert images from an url or an input file to another type",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ddgll/vue3-trend.git"
