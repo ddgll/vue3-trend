@@ -1,7 +1,6 @@
 import Path from "./path";
 import Gradient from "./gradient";
 import { defineComponent, h, watch, nextTick } from "vue";
-import { v4 as uuidv4 } from "uuid";
 
 export default defineComponent({
   name: "Trend",
@@ -50,7 +49,7 @@ export default defineComponent({
   },
 
   setup(props) {
-    const id = `vue3-trend-${uuidv4()}`;
+    const id = `vue3-trend-${crypto.randomUUID()}`;
 
     let lastLength: number = 0;
 
