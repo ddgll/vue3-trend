@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     lib: {
-      entry: path.resolve("lib/trend.ts"),
+      entry: path.resolve("lib/Trend.vue"),
       name: "Vue3Trend",
       fileName: (format) => `vue3-trend.${format}.js`,
     },

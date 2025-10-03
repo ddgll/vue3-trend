@@ -1,17 +1,11 @@
 import { checkCollinear, getDistance, moveTo } from "./math";
 import { Point, PointBounds, Bounds } from "../index.d";
 
-/**
- *  Calculate the coordinate
- * @param  {number[]|object[]}  arr
- * @param  {object}             boundary
- * @return {object[]}
- */
 export function genPoints(
-  arr: Array<any>,
+  arr: number[],
   { minX, minY, maxX, maxY }: PointBounds,
   { max, min }: Bounds
-): Array<Point> {
+): Point[] {
   arr = arr.map((item: any) => (typeof item === "number" ? item : item.value));
   const minValue = Math.min(...arr, min) - 0.001;
   const gridX = (maxX - minX) / (arr.length - 1);
@@ -32,7 +26,7 @@ export function genPoints(
 /**
  * From https://github.com/unsplash/react-trend/blob/master/src/helpers/DOM.helpers.js#L18
  */
-export function genPath(points: Array<Point>, radius: number): string {
+export function genPath(points: Point[], radius: number): string {
   const start = points.shift();
   if (!start) return "";
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import Trend from "../../lib/trend";
+import Trend from "../../lib/Trend.vue";
 
 defineProps<{ msg: string }>();
 
